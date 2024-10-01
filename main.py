@@ -40,4 +40,5 @@ async def on_message(message):
             print('\n\n\033[31m[*] CONECT API | HAKING install...\033[m\n\n')
 
 
-client.run('MTI4OTY3MDAzMTE5Nzg2ODEwMg.GiDMw2.P6c7UNHUt7_v6FPh1pGiQmNcyq9MofMhQmnwUM')
+ssnak = str(input('sua ssnak de segurança: ))
+client.run(ssnak)
