@@ -36,7 +36,12 @@ async def on_message(message):
 ''')
         except:
             print('\n\n\033[31m[*] CONECT API | HAKING install...\033[m\n\n')
+    elif message.content.startswith('.file'):
+        comando = message.content
+        comando = comando.split(' ')
+        file_path = comando[1]
 
+        await message.channel.send(comando[1], file=discord.File(file_path))
 
 ssnak = str(input('sua ssnak de segurança: '))
 client.run(ssnak)
